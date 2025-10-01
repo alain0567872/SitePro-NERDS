@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden McKinney</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2196F3;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .role {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.7rem;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .social-link i {
+            width: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .social-link.linkedin i {
+            color: #0077b5;
+        }
+
+        .social-link.github i {
+            color: #333;
+        }
+
+        /* Hover effects */
+        .social-link:hover {
+            transform: translateX(5px);
+            background-color: #f8f9fa;
+        }
+
+        .social-link.linkedin:hover {
+            background-color: #e6f3f9;
+        }
+
+        .social-link.github:hover {
+            background-color: #f6f8fa;
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-block {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .content-block p {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-sidebar {
+                align-items: center;
+                text-align: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .social-link {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="members.html">Members</a>
+                <a href="schedule.pdf">Schedule</a>
+            </div>
+        </nav>
+
+        <div class="profile-section">
+            <div class="profile-sidebar">
+                <img src="images/hayden.jpg" alt="Profile Picture" class="profile-image">
+                <h1>Hayden McKinney</h1>
+                <p class="role">Programmer</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/hayden-mckinney-985428223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <h2>About me</h2>
+                <div class="content-block">
+                    <p>Senior Computer Science student at Texas Tech University, graduating December 2025. Minoring in Mathematics.
+Completed four software engineering internships across power, aerospace defense, international tech sectors, and academia.</p>
+                </div>
+
+                <div class="content-block">
+                    <p>Passionate about building efficient & impactful systems.</p>
+                </div>
+
+                <div class="content-block">
+                    <p>Actively pursuing graduate study to deepen technical expertise.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

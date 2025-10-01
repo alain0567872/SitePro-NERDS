@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .name-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .name-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .name {
+            font-size: 1.5rem;
+            color: #2196F3;
+            margin-bottom: 1rem;
+        }
+
+        .name a {
+            text-decoration: none;
+            color:#666;
+         }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .name-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Members</h2>
+       
+        <div class="name-card">
+            <h3 class="name"><a href="ivan.html">Ivan Lerma</a></h3>
+        </div>
+        <div class="name-card">
+            <h3 class="name"><a href="hayden.html">Hayden McKinney</a></h3>  
+        </div>
+        <div class="name-card">            
+            <h3 class="name"><a href="ethan.html">Ethan Homan</a></h3>    
+        </div>
+        <div class="name-card">  
+            <h3 class="name"><a href="alain.html">Alain Villalonga Martinez</a></h3>
+        </div>
+    </div>
+</body>
+</html>
